@@ -11,8 +11,8 @@ import (
 )
 
 func (h *HttpEndpoints) AddAPI(rg *gin.RouterGroup) {
-	rg.GET("/service-a", h.getDataServiceA)
-	rg.GET("/service-b", h.getDataServiceB)
+	rg.POST("/service-a", h.getDataServiceA)
+	rg.POST("/service-b", h.getDataServiceB)
 }
 
 func (h *HttpEndpoints) getDataServiceA(c *gin.Context) {
